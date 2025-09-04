@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__filesystem__list_allowed_directories",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__read_file",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

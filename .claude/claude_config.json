@@ -1,0 +1,23 @@
+{
+  "autoApprove": true,
+  "autoApprovalScope": "project",
+  "projectPath": "C:\\Users\\sergei\\Documents\\VS-Code\\transactions-check",
+  "permissions": {
+    "read": true,
+    "write": true,
+    "execute": true,
+    "createFiles": true,
+    "deleteFiles": true,
+    "modifyFiles": true
+  },
+  "exclusions": [],
+  "requireApprovalFor": [
+    "systemCommands",
+    "outsideProjectOperations"
+  ],
+  "settings": {
+    "confirmDangerousOperations": false,
+    "allowAllProjectOperations": true,
+    "projectBoundary": "strict"
+  }
+}
