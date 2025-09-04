@@ -6,7 +6,14 @@
       "mcp__filesystem__read_file",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(py scripts\\analyze_investors_column.py:*)",
+      "Bash(py:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []
