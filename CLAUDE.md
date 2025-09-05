@@ -84,6 +84,7 @@ All categories are standardized to Arcadia format (singular "investment").
 **Primary outputs** in `output/`:
 - `ig_arc_mapping_full_vF.csv` - 3,306 mapped transactions with full Arcadia enrichment
 - `ig_arc_unmapped_vF.csv` - 883 unmapped but fully processed transactions
+- `arcadia_company_unmapped.csv` - 1,568 deduplicated company cards from unmapped transactions (targets & investors)
 
 Both files are production-ready with:
 - 100% Arcadia-compliant types and categories
@@ -119,7 +120,14 @@ For unmapped transactions, the system applies:
 ### Critical Files - DO NOT DELETE
 - `output/ig_arc_mapping_full_vF.csv` - Master mapping
 - `output/ig_arc_unmapped_vF.csv` - Enhanced unmapped
+- `output/arcadia_company_unmapped.csv` - Consolidated company cards ready for Arcadia import
 - All files in `src/` directory - source data
+
+### Archived Files
+Intermediate company cards files are archived in `output/_archive/company_cards_20250109/`:
+- Previous deduplication iterations
+- Investor parsing intermediate files
+- Comparison and validation outputs
 
 ## Auto-Approval Configuration
 

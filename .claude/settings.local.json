@@ -16,7 +16,8 @@
       "Bash(dir:*)",
       "Bash(cmd /c:*)",
       "mcp__filesystem__search_files",
-      "mcp__filesystem__edit_file"
+      "mcp__filesystem__edit_file",
+      "mcp__filesystem__write_file"
     ],
     "deny": [],
     "ask": []
