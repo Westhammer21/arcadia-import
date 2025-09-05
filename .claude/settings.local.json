@@ -13,7 +13,10 @@
       "Bash(py scripts\\analyze_investors_column.py:*)",
       "Bash(py:*)",
       "mcp__sequential-thinking__sequentialthinking",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(cmd /c:*)",
+      "mcp__filesystem__search_files",
+      "mcp__filesystem__edit_file"
     ],
     "deny": [],
     "ask": []
