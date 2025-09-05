@@ -17,7 +17,15 @@
       "Bash(cmd /c:*)",
       "mcp__filesystem__search_files",
       "mcp__filesystem__edit_file",
-      "mcp__filesystem__write_file"
+      "mcp__filesystem__write_file",
+      "mcp__python-runner__run_python_code",
+      "Bash(del:*)",
+      "Bash(if [ -f .gitignore ])",
+      "Bash(else echo \"No .gitignore file found\")",
+      "Bash(fi)",
+      "Bash(awk:*)",
+      "Bash(git reset:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

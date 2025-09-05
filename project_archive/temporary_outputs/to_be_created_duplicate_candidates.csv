@@ -1,0 +1,9 @@
+unmapped_name,ig_id,arcadia_id,arcadia_name,match_field,score,matched_value,word_type
+Apex Capital Partners,2215,3575,Apex Capital,also_known_as,100.0,Apex Capital Partners,single
+Aleph VC,4143,9956,Aleph VC,name,100.0,,multi
+Handelsbanken Fonder,3023,8137,Handelsbanken Fonder AB,name,93.02325581395348,,multi
+IDEO CoLab,1254,8275,IDEO CoLab Ventures,name,68.96551724137932,,multi
+Lazarte Brothers,453,10755,the Lazarte Brothers,name,88.88888888888889,,multi
+Meta (NASDAQ: META),2391,8531,Meta (NASDAQ: META) (facebook),name,78.04878048780488,,multi
+NTT DOCOMO Ventures,3230,3545,NTT Docomo,name,68.96551724137932,,multi
+Third Wave,3841,10497,Third Wave Digital Partners,name,54.054054054054056,,multi

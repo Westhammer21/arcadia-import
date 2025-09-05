@@ -1,0 +1,15 @@
+,Value
+total_transactions,882
+total_companies,1537
+linked_transactions,882
+orphaned_transactions,0
+phantom_ids,1
+transactions_with_targets,883
+avg_investors_per_transaction,1.7734994337485843
+companies_without_arcadia_id,260
+role_distribution,"{'participant': 609, 'lead': 957, 'target': 883}"
+avg_companies_per_transaction,2.7734994337485843
+max_companies_per_transaction,23
+min_companies_per_transaction,1
+status_distribution,"{'IMPORTED': 644, 'IS INCOMPLETE': 447, 'ENABLED': 295, 'TO BE CREATED': 151}"
+transaction_coverage_pct,100.0
