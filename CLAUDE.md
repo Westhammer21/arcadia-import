@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Transaction Duplicate Detection & Mapping System that maps InvestGame (IG) transactions to Arcadia database records. The system has achieved 98.7% Arcadia coverage with 3,306 of 3,349 transactions successfully mapped.
 
-**CURRENT STATUS (06-09-2025):** Company Cards phase completed with 260 TO BE CREATED companies validated and backed up. Next phase: Transaction import preparation using ig_arc_unmapped_vF.csv.
+**CURRENT STATUS (06-09-2025):** Strategic/CVC data enhancement completed (9 companies enhanced, 12 placeholder values replaced with real data). Project cleanup completed - obsolete scripts removed. Next phase: Transaction import preparation using ig_arc_unmapped_vF.csv.
 
 ## Commands
 
@@ -144,6 +144,15 @@ Intermediate company cards files are archived in `output/_archive/company_cards_
 - Previous deduplication iterations
 - Investor parsing intermediate files
 - Comparison and validation outputs
+
+## Strategic/CVC Enhancement Status (06-09-2025)
+
+**Enhancement Completed:** 9 Strategic/CVC companies enhanced with real business data
+- **Research Success Rate:** 91.7% (12 placeholder values replaced)
+- **Enhanced Fields:** Country, Website, Founded Year
+- **Backup Location:** `archive/company_cards_final_backup_20250906/arcadia_company_unmapped_ENHANCED.csv`
+- **Verification:** All updates confirmed accurate via 2+ source validation
+- **Next Phase Ready:** Transaction import preparation
 
 ## Auto-Approval Configuration
 
