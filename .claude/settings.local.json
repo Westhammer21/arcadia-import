@@ -26,7 +26,16 @@
       "Bash(awk:*)",
       "Bash(git reset:*)",
       "Bash(rm:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebSearch",
+      "WebFetch(domain:www.bongfish.com)",
+      "WebFetch(domain:pitchbook.com)",
+      "WebFetch(domain:find-and-update.company-information.service.gov.uk)",
+      "WebFetch(domain:www.crunchbase.com)",
+      "mcp__filesystem__directory_tree",
+      "mcp__filesystem__read_multiple_files",
+      "mcp__filesystem__get_file_info",
+      "mcp__filesystem__create_directory"
     ],
     "deny": [],
     "ask": []

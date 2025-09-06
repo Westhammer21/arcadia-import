@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Transaction Duplicate Detection & Mapping System that maps InvestGame (IG) transactions to Arcadia database records. The system has achieved 98.7% Arcadia coverage with 3,306 of 3,349 transactions successfully mapped.
 
+**CURRENT STATUS (06-09-2025):** Company Cards phase completed with 260 TO BE CREATED companies validated and backed up. Next phase: Transaction import preparation using ig_arc_unmapped_vF.csv.
+
 ## Commands
 
 ### Primary Verification & Analysis
@@ -38,19 +40,19 @@ py scripts/create_full_mapping.py
 py scripts/clean_pre2020_transactions.py
 ```
 
-### Unmapped Transaction Processing
+### Transaction Import Preparation (Next Phase)
 ```bash
-# Map Corporate transactions using context-aware rules
-py scripts/map_corporate_unmapped.py
+# Prepare all unmapped transactions for Arcadia import
+py scripts/prepare_all_transactions_import.py
 
-# Enrich unmapped with company data
-py scripts/enrich_with_company_data.py
+# Prepare transaction import with fixed approach
+py scripts/prepare_transaction_import_fixed.py
 
-# Standardize investor placeholders
-py scripts/process_investor_placeholders.py
+# Prepare test batch for validation
+py scripts/prepare_transaction_import_test.py
 
-# Fix encoding issues in text fields
-py scripts/fix_all_encoding_final.py
+# Validate import readiness
+py scripts/validate_arcadia_import.py
 ```
 
 ## Architecture & Data Flow
@@ -83,10 +85,14 @@ All categories are standardized to Arcadia format (singular "investment").
 
 **Primary outputs** in `output/`:
 - `ig_arc_mapping_full_vF.csv` - 3,306 mapped transactions with full Arcadia enrichment
-- `ig_arc_unmapped_vF.csv` - 883 unmapped but fully processed transactions
-- `arcadia_company_unmapped.csv` - 1,537 deduplicated company cards from unmapped transactions (targets & investors)
-  - 260 TO BE CREATED companies ready for Arcadia import
+- `ig_arc_unmapped_vF.csv` - 883 unmapped but fully processed transactions (NEXT PHASE TARGET)
+- `arcadia_company_unmapped.csv` - 1,537 deduplicated company cards (COMPANY CARDS PHASE COMPLETE)
+  - 260 TO BE CREATED companies (backed up and ready for Arcadia import)
   - 1,277 existing companies for transaction mapping
+
+**Company Cards Backup** in `archive/company_cards_final_backup_20250906/`:
+- `arcadia_company_unmapped_FINAL_20250906.csv` - Final company cards backup
+- `ARCADIA_IMPORT_READINESS_REPORT_FINAL_20250906.md` - Final import readiness analysis
 
 Both files are production-ready with:
 - 100% Arcadia-compliant types and categories
